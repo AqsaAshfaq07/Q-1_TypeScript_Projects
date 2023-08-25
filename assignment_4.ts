@@ -64,7 +64,15 @@ console.log(factorial(7));
 
 //  - Write a program having an array of numbers if the number is negative it should remove the negative number from the array.
 
+var nums: number[] = [1, -1, 2, -2, 3, -3];
 
+for (let i = 0; i < nums.length; i++) {
+    if (nums[i] < 0) {
+        nums.splice(i, 1); // removes the element at index i
+    }
+}
+
+console.log(nums);
 
 //  - Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return the sum of all the numbers in the array.
 
